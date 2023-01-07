@@ -1,18 +1,11 @@
-const dtb = (a,b,c) => (a+b+c)/3;
-let dtbCa = dtb(44,23,71);
-let dtbGau = dtb(65,54,49);
-console.log("dtb cá:",dtbCa,"dtb gấu:",dtbGau);
-function checkWin(dtbCa,dtbGau){
-    if(dtbCa>= 2*dtbGau){
-        console.log("Cá heo win");
-    }else if(2* dtbCa <= dtbGau){
-        console.log("Gấu win");
-    }else{
-        console.log("ko ai win");
-    }
+const data1 =[17,20,36];
+console.log("...",data1[0],"Độ C","...",data1[1],"Độ C","...",data1[2],"Độ C");
+const printForecast = function(arr){
+    let count = "";
+    for(let i=0;i<arr.length;i++){
+        count = count + arr[i] +" Độ C trong " +(i+1)+" ngày        |        " ;
+
+
+    }console.log(count);
 }
-checkWin(dtbCa,dtbGau);
-dtbCa = dtb(85,54,41);
-dtbGau = dtb(34,23,27);
-console.log("dtb cá:",dtbCa,"dtb gấu:",dtbGau);
-checkWin(dtbCa,dtbGau);
+printForecast(data1);
